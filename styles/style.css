@@ -192,12 +192,8 @@ button {
   cursor: pointer;
 }
 
-.save__modal-window {
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  max-inline-size: 355px;
+.save__modal-window1 {
+  
   border: none;
 }
 
@@ -206,7 +202,10 @@ button {
   gap: 20px;
   grid-template-columns: min-content 1fr;
   text-transform: uppercase;
-  place-items: center;
+  align-items: center;
+  max-inline-size: 345px;
+  
+  padding: 30px;
 }
 
 .modal-window__icon {
@@ -219,8 +218,9 @@ button {
   font-size: 14px;
   padding-block: 10px;
   line-height: 12.6px;
-}
-
+  cursor: pointer;
+  grid-column: 1 / 3;
+}  
 @media (width <= 375px) {
   .header {
     inline-size: 100%;
