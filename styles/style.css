@@ -15,6 +15,11 @@
   min-block-size: 100dvb;
   background-color: grey;
   font-family: var(--main-font, sans-serif), sans-serif;
+  display: grid;
+  grid-template-columns: 1fr;
+ 
+  place-items: center;
+  justify-content: center;
 }
 
 @supports (font-variation-settings: normal) {
@@ -28,11 +33,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 20px; 
   font-family: var(--accent-font, sans-serif), sans-serif;
   margin: 100px auto;
-
+  inline-size: 100%;
   padding-block: clamp(120px, 7.3239rem + 0.7512vw, 128px);
+  background-color: #fff;
+  border: 2px solid #000;
   
   /* block-size: clamp(20.4375rem, 19.5352rem + 3.8498vw, 23rem); */
   
@@ -47,12 +54,11 @@
 .header-title {
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   line-height: 100%;
+  text-transform: uppercase;
 }
 
 .section-width {
   inline-size: clamp(375px, 16.2852rem + 30.5164vw, 700px);
-  background-color: #fff;
-  border: 2px solid #000;
 }
 
 .content {
@@ -60,12 +66,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 50px;
+  margin-bottom: 103px;
 }
 
 .content-section {
-  display: flex;
-  flex-direction: column;
+  background-color: #fff;
+  border: 2px solid #000;
 }
 
 .card_title {
@@ -80,10 +87,43 @@
 .card_img {
   display: block;
   width: 100%;
+  height: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   object-position: right;
+
+}
+
+.card_img__zero-sprint {
+  
+}
+
+.card_img-container {
+  position: relative;
+  mix-blend-mode: hard-light;
   border: 2px solid #000;
+}
+
+.decorated-label {
+  position: absolute;
+  z-index: 1;
+  font-family: var(--accent-font, sans-serif), sans-serif;
+  font-size: 14px;
+  inset-inline-end: 25px;
+  inset-block-start: 25px;
+  text-shadow: 
+    -1px 0 #fff, 
+    0 1px #fff, 
+    1px 0 #fff, 
+    0 -1px #fff;
+}
+
+@supports((text-stroke: 1px #fff) or (-webkit-text-stroke: 1px #fff)) {
+  .decorated-label {
+    text-stroke: 0.5px #fff;
+    -webkit-text-stroke: 1px rgb(255, 255, 255, 0.3);
+    text-shadow: none;
+  }
 }
 
 .card-text {
@@ -94,7 +134,9 @@
   font-weight: var(--main-font-text-wght, 400);
   font-size: 18px;
   line-height: 21px;
-  padding: 25px;
+  padding-inline: 25px;
+  padding-block: 25px 27px;
+  /* border-top: 2px solid #000; */
 }
 
 button {
@@ -105,7 +147,10 @@ button {
 .card_button {
   display: flex;
   justify-content: end;
-  align-items: center;
+  align-items: start;
+  gap: 6px;
+  padding-inline: 25px;
+  margin-bottom: 25px;
 }
 
 
@@ -113,10 +158,7 @@ button {
   display: flex;
   align-items: center;
   align-self: center;
-  gap: 10px;
   justify-content: end;
-  padding-inline: 25px;
-  margin-bottom: 25px;
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -124,19 +166,64 @@ button {
 
 .card__like-button {
   background-color: transparent;
-  border: 2px solid #000;
-  padding: 10px 37px 6px;
+  border-top: 2px solid #000;
+  padding: 10px 35px 5px;
   cursor: pointer;
 }
 
 .button__text {
   font-family: var(--accent-font, sans-serif), sans-serif;
   font-size: 14px;
+  line-height: 21px;
   
+}
+
+
+.save-button__icon {
+  inline-size: 21px;
+}
+
+.save-button {
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  gap: 12px;
+  padding: 18px 21px;
+  cursor: pointer;
+}
+
+.save__modal-window {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: min-content 1fr;
+  max-inline-size: 353px;
+  padding: 30px;
+  text-transform: uppercase;
+}
+
+.modal-window__icon {
+  inline-size: 39px;
+}
+
+.save__modal-window__button {
+  background-color: transparent;
+  grid-column: 1 / 3;
+  font-family: var(--accent-font, sans-serif), sans-serif;
+  text-transform: uppercase;
+  padding-block: 10px;
 }
 
 @media (width <= 375px) {
   .header {
     inline-size: 100%;
   }
-} 
+
+  .content {
+    margin-bottom: 100px;
+  }
+
+  .save__modal-window {
+    max-inline-size: 341px;
+  }
+
+}
