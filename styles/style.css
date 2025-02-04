@@ -193,12 +193,20 @@ button {
 }
 
 .save__modal-window {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-inline-size: 355px;
+  border: none;
+}
+
+.save__modal-window__inform {
   display: grid;
   gap: 20px;
   grid-template-columns: min-content 1fr;
-  max-inline-size: 353px;
-  padding: 30px;
   text-transform: uppercase;
+  place-items: center;
 }
 
 .modal-window__icon {
@@ -207,10 +215,10 @@ button {
 
 .save__modal-window__button {
   background-color: transparent;
-  grid-column: 1 / 3;
   font-family: var(--accent-font, sans-serif), sans-serif;
-  text-transform: uppercase;
+  font-size: 14px;
   padding-block: 10px;
+  line-height: 12.6px;
 }
 
 @media (width <= 375px) {
