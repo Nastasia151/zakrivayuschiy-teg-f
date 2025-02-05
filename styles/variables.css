@@ -4,4 +4,9 @@
 --accent-font: 'PressStart2P-Regular', sans-serif;
 --main-font-text-wght: 400;
 --main-font-title-wght: 700;
+--content-inline-size: clamp(375px, 16.2852rem + 30.5164vw, 700px);
+--background-image-gradient: 
+repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px),
+repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
+linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
 }
