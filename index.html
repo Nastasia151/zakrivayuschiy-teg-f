@@ -410,23 +410,32 @@
         </article>
       </section>
       <section>
-        <button popovertarget="save__modal-window" class="save-button">
+        <button
+          type="button"
+          onclick="window['save__modal-window'].showModal()" 
+          aria-controls="dialog-id"
+          class="save-button"
+          >
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 39" class="save-button__icon">
             <use href="./svg/floppy.svg#floppy"></use>
           </svg>
-          <span class="button__text">Сохранить на память</span>         
+          <span class="button__text">Сохранить на память</span>   
         </button>
-        <div id="save__modal-window" popover="manual" class="save__modal-window">
-          <div class="save__modal-window__inform">
+        <dialog id="save__modal-window" class="save__modal-window">
+          <form class="save__modal-window__inform">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 39" class="modal-window__icon">
               <use href="./svg/floppy.svg#floppy"></use>
             </svg>
-            <p class="save__modal-window__text">Вставьте дискету, чтобы продолжить</p>      
-            <button class="save__modal-window__button" popovertarget="save__modal-window" popovertargetaction="hide">
-              <span class="button__text">ОК</span>
-            </button>
-          </div>        
-        </div>
+            <p class="save__modal-window__text">Вставьте дискету, чтобы продолжить</p>
+            <button 
+              type="button" 
+              onclick="window['save__modal-window'].close()"
+              class="save__modal-window__button"
+            >
+             <span class="button__text">ОК</span>
+            </button> 
+          </form>
+        </dialog>
       </section>
     </main>
     <footer></footer>

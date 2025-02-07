@@ -13,7 +13,7 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-family: var(--main-font, sans-serif), sans-serif;
+  font-family: sans-serif;
   display: grid;
   grid-template-columns: 1fr;
   place-items: center;
@@ -24,6 +24,7 @@
 
 @supports (font-variation-settings: normal) {
   .page {
+    font-family: var(--main-font, sans-serif), sans-serif;
     font-weight: var(--main-font-text-wght, 400);
   }
 }
@@ -37,7 +38,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px; 
+  gap: 20px;
   font-family: var(--accent-font, sans-serif), sans-serif;
   background-color: var(--bg-color, #fff);
   border: 2px solid currentColor;
@@ -86,7 +87,7 @@
 
 .card_title {
   font-family: var(--main-font, sans-serif), sans-serif;
-  font-weight: var(--main-font-title-wght, 700);
+  font-weight: var(--main-font-title-wght, 785);
   font-size: 18px;
   line-height: 1.21;
   padding-block: calc(var(--card-padding, 10px) / 2);
@@ -138,7 +139,7 @@
   font-family: var(--main-font, sans-serif), sans-serif;
   font-weight: var(--main-font-text-wght, 400);
   font-size: 18px;
-  padding: var(--card-body-padding, 25px); 
+  padding: var(--card-body-padding, 25px);
 }
 
 button {
@@ -241,6 +242,7 @@ button {
 
 .save__modal-window {
   border: 2px solid currentColor;
+  padding: 0;
 }
 
 .save__modal-window__inform {
