@@ -9,7 +9,8 @@
 
 /* fonts */
 
---main-font: 'Inter-Variable', sans-serif;
+--main-font: sans-serif;
+
 --accent-font: 'PressStart2P-Regular', sans-serif;
 --main-font-text-wght: 400;
 --main-font-title-wght: 785;
@@ -40,4 +41,11 @@
 --heart-contour-color: var(--dark,#000);
 --heart-bright-color: var(--accent, #ff0000);
 
+}
+
+
+@supports (font-variation-settings: normal) {
+ :root {
+    --main-font: 'Inter-Variable';
+ }
 }
