@@ -14,17 +14,25 @@
     <link rel="stylesheet" href="./styles/animations.css" />
   </head>
   <body class="page">
-    <header class="header section-width">
+    <header class="header content-inline-size">
       <h1 class="header-logo">&lt;/HTML&gt;</h1>
       <p class="header-title">закрывающий тег</p>
     </header>
-    <main class="content section-width">
-      <section>
+    <main class="content content-inline-size">
+      <section class="cards">
         <article class="content-section">
           <h2 class="card_title">Фритрек и нулевой спринт: Подготовка к работе</h2>
           <div class="card_img-container">
-            <p class="decorated-label">&lt;/HTML&gt;</p> <!--  поменять на span -->
-            <img src="./images/truck.png" class="card_img card_img__zero-sprint"> <!-- исправить на picture -->
+            <span class="decorated-label">&lt;/HTML&gt;</span>
+            <picture class="card_img zero-sprint__card-one__img">
+              <source srcset="./images/truck.avif" type="image/avif"/>
+              <source srcset="./images/truck.webp" type="image/webp"/>
+              <source srcset="./images/truck.jpg" type="image/jpg"/>
+              <img
+                src="./images/truck.png" 
+                class="card_img"
+                alt="вечерняя поляна, на которой припаркован белый фургон с красной крышей, рядом слева стоит лавочка и горит костер">
+            </picture>
           </div>
           <div class="card__body">
              <p>Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на учёбу.
@@ -34,7 +42,7 @@
              </p>       
              <div class="card_button">
                <button class="card__icon-button">
-                <svg class="like-icon" width="39" height="36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="like-icon" width="39" height="34" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g class="heart">              
                     <path class="contour" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 
                     3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z" 
@@ -59,13 +67,20 @@
              </div>
           </div>
         </article>
-      </section>
-      <section>
-        <article class="content-section first-sprint__card_one">
+        <article class="content-section">
           <h2 class="card_title">1 спринт: Я — чистый лист</h2>
           <div class="card_img-container">
-            <p class="decorated-label">&lt;/HTML&gt;</p>
-            <img src="./images/truck.png" class="card_img"> <!-- исправить на picture -->
+            <span class="decorated-label">&lt;/HTML&gt;</span>
+            <picture class="card_img first-sprint__card-one__img">
+              <source srcset="./images/truck.avif" type="image/avif"/>
+              <source srcset="./images/truck.webp" type="image/webp"/>
+              <source srcset="./images/truck.jpg" type="image/jpg"/>
+              <img
+                loading="lazy"
+                src="./images/truck.png" 
+                class="card_img"
+                alt="вечерняя поляна, на которой припаркован белый фургон с красной крышей, рядом слева стоит лавочка и горит костер">
+            </picture>
           </div>
           <div class="card__body">
              <p>На первых этапах мы работали со страхами и сомнениями, которые часто испытывают новички. Один из них — страх перед чистым листом. 
@@ -101,13 +116,20 @@
              </div>
           </div>
         </article>
-      </section>
-      <section>
-        <article class="content-section first-sprint__card_two">
+        <article class="content-section">
           <h2 class="card_title">1 спринт: А если не получится?</h2>
           <div class="card_img-container">
-            <p class="decorated-label">&lt;CSS&gt;</p>
-            <img src="./images/truck.png" class="card_img card_img__zero-sprint"> <!-- исправить на picture -->
+            <span class="decorated-label">&lt;CSS&gt;</span>
+            <picture class="card_img first-sprint__card-two__img">
+              <source srcset="./images/truck.avif" type="image/avif"/>
+              <source srcset="./images/truck.webp" type="image/webp"/>
+              <source srcset="./images/truck.jpg" type="image/jpg"/>
+              <img
+                loading="lazy"
+                src="./images/truck.png" 
+                class="card_img"
+                alt="вечерняя поляна, на которой припаркован белый фургон с красной крышей, рядом слева стоит лавочка и горит костер">
+            </picture>
           </div>
           <div class="card__body">
              <p>Первый проект — позади! Но это всё ещё самое начало пути. Радость могла быстро померкнуть и смениться ожиданием провала. 
@@ -142,13 +164,20 @@
             </div>
           </div>
         </article>
-      </section>
-      <section>
-        <article  class="content-section second-sprint__card_one">
+        <article  class="content-section">
           <h2 class="card_title">2 спринт: Погоня за идеалом</h2>
           <div class="card_img-container">
-            <p class="decorated-label">&lt;desigions&gt;</p>
-            <img src="./images/truck.png" class="card_img card_img__zero-sprint"> <!-- исправить на picture -->
+            <span class="decorated-label">&lt;desigions&gt;</span>
+            <picture class="card_img second-sprint__card-one__img">
+              <source srcset="./images/truck.avif" type="image/avif"/>
+              <source srcset="./images/truck.webp" type="image/webp"/>
+              <source srcset="./images/truck.jpg" type="image/jpg"/>
+              <img
+                loading="lazy"
+                src="./images/truck.png" 
+                class="card_img"
+                alt="вечерняя поляна, на которой припаркован белый фургон с красной крышей, рядом слева стоит лавочка и горит костер">
+            </picture>
           </div>
           <div class="card__body">
             <p>На этом этапе вы уже достаточно разбирались в основах вёрстки, чтобы понять, как много ещё впереди. 
@@ -184,13 +213,20 @@
             </div>
           </div>
         </article>  
-      </section>
-      <section>
-        <article class="content-section second-sprint__card_two">
+        <article class="content-section">
           <h2 class="card_title">2 спринт: О тех, кто рядом</h2>
           <div class="card_img-container">
-            <p class="decorated-label">care</p>
-            <img src="./images/truck.png" class="card_img card_img__zero-sprint"> <!-- исправить на picture -->
+            <span class="decorated-label">care</span>
+            <picture class="card_img second-sprint__card-two__img">
+              <source srcset="./images/truck.avif" type="image/avif"/>
+              <source srcset="./images/truck.webp" type="image/webp"/>
+              <source srcset="./images/truck.jpg" type="image/jpg"/>
+              <img
+                loading="lazy"
+                src="./images/truck.png" 
+                class="card_img"
+                alt="вечерняя поляна, на которой припаркован белый фургон с красной крышей, рядом слева стоит лавочка и горит костер">
+            </picture>
           </div>
           <div class="card__body">
              <p>Всё это время вы были не одиноки (хотя, возможно, иногда и чувствовали, что одни против целого мира). 
@@ -226,13 +262,20 @@
              </div>
           </div>
         </article>
-      </section>
-      <section>
-        <article class="content-section third-sprint__card_one">
+        <article class="content-section">
           <h2 class="card_title">3 спринт: Обходные стратегии</h2>
           <div class="card_img-container">
-            <p class="decorated-label">&lt;support&gt;</p>
-            <img src="./images/truck.png" class="card_img card_img__zero-sprint"> <!-- исправить на picture -->
+            <span class="decorated-label">&lt;support&gt;</span>
+            <picture class="card_img third-sprint__card-one__img">
+              <source srcset="./images/truck.avif" type="image/avif"/>
+              <source srcset="./images/truck.webp" type="image/webp"/>
+              <source srcset="./images/truck.jpg" type="image/jpg"/>
+              <img
+                loading="lazy"
+                src="./images/truck.png" 
+                class="card_img"
+                alt="вечерняя поляна, на которой припаркован белый фургон с красной крышей, рядом слева стоит лавочка и горит костер">
+            </picture>
           </div>
           <div class="card__body">
              <p>На этом курсе вы постоянно решали разные задачи. В какой-то момент вам могло показаться, что решения просто иссякли. 
@@ -267,13 +310,20 @@
              </div>
           </div>
          </article>
-      </section>
-      <section>
-        <article class="content-section third-sprint__card_two">
+         <article class="content-section">
           <h2 class="card_title">3 спринт: Когда опускаются руки</h2>
           <div class="card_img-container">
-            <p class="decorated-label">&lt;lifes-style: none;&gt;</p>
-            <img src="./images/truck.png" class="card_img card_img__zero-sprint"> <!-- исправить на picture -->
+            <span class="decorated-label">&lt;lifes-style: none;&gt;</span>
+            <picture class="card_img third-sprint__card-two__img">
+              <source srcset="./images/truck.avif" type="image/avif"/>
+              <source srcset="./images/truck.webp" type="image/webp"/>
+              <source srcset="./images/truck.jpg" type="image/jpg"/>
+              <img
+                loading="lazy"
+                src="./images/truck.png" 
+                class="card_img"
+                alt="вечерняя поляна, на которой припаркован белый фургон с красной крышей, рядом слева стоит лавочка и горит костер">
+            </picture>
           </div>
           <div class="card__body">
              <p>Во время учёбы часто возникает чувство, когда не знаешь, за что хвататься.
@@ -309,13 +359,20 @@
              </div>
           </div>
         </article>
-      </section>
-      <section>
-        <article class="content-section now_here">
+        <article class="content-section">
           <h2 class="card_title">«Сейчас я здесь»</h2>
           <div class="card_img-container">
-            <p class="decorated-label">&lt;experience&gt;</p>
-            <img src="./images/truck.png" class="card_img card_img__zero-sprint"> <!-- исправить на picture -->
+            <span class="decorated-label">&lt;experience&gt;</span>
+            <picture class="card_img now_here__img">
+              <source srcset="./images/truck.avif" type="image/avif"/>
+              <source srcset="./images/truck.webp" type="image/webp"/>
+              <source srcset="./images/truck.jpg" type="image/jpg"/>
+              <img
+                loading="lazy"
+                src="./images/truck.png" 
+                class="card_img"
+                alt="вечерняя поляна, на которой припаркован белый фургон с красной крышей, рядом слева стоит лавочка и горит костер">
+            </picture>
           </div>
           <div class="card__body">
              <p>Сейчас вы уже очень много знаете о вёрстке. Но это только начало. Во-первых, впереди ещё много материала про «красотищу».
@@ -352,27 +409,25 @@
            </div>
         </article>
       </section>
-      <button popovertarget="save__modal-window" class="save-button">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 39" class="save-button__icon">
-          <use href="./svg/floppy.svg#floppy"></use>
-        </svg>
-        <span class="button__text">Сохранить на память</span>         
-      </button>
-
-      <div id="save__modal-window" popover="manual" class="save__modal-window1">
-       <div class="save__modal-window__inform">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 39" class="modal-window__icon">
-          <use href="./svg/floppy.svg#floppy"></use>
-        </svg>
-        <p class="button__text">Вставьте дискету, чтобы продолжить</p>
-      
-      <button class="save__modal-window__button" popovertarget="save__modal-window" popovertargetaction="hide">
-        <span aria-hidden="true" class="button__text">ОК</span>
-        <span class="visually-hidden">Закрыть</span>
-      </button>
-       </div>
-        
-      </div>
+      <section>
+        <button popovertarget="save__modal-window" class="save-button">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 39" class="save-button__icon">
+            <use href="./svg/floppy.svg#floppy"></use>
+          </svg>
+          <span class="button__text">Сохранить на память</span>         
+        </button>
+        <div id="save__modal-window" popover="manual" class="save__modal-window">
+          <div class="save__modal-window__inform">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 39" class="modal-window__icon">
+              <use href="./svg/floppy.svg#floppy"></use>
+            </svg>
+            <p class="save__modal-window__text">Вставьте дискету, чтобы продолжить</p>      
+            <button class="save__modal-window__button" popovertarget="save__modal-window" popovertargetaction="hide">
+              <span class="button__text">ОК</span>
+            </button>
+          </div>        
+        </div>
+      </section>
     </main>
     <footer></footer>
     <script src="./scripts/like.js"></script>
