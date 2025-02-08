@@ -11,21 +11,21 @@
 */
 
 @keyframes scale {
-    from {
-      transform: scale(1);
-      transform-origin: center;
-    }
-    to {
-      transform: scale(1.25);
-      transform-origin: center;
-    }
+  from {
+    transform: scale(1);
+    transform-origin: center;
   }
+  to {
+    transform: scale(1.25);
+    transform-origin: center;
+  }
+}
   
-  @keyframes sparks {
-    from {
+@keyframes sparks {
+  from {
       opacity: 0;
-    }
-    to {
-       opacity: 100%;
-    }
   }
+  to {
+      opacity: 100%;
+  }
+}
